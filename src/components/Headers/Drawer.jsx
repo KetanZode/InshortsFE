@@ -38,7 +38,7 @@ function Drawer() {
                 <div><button className='py-1 flex justify-start pl-6 w-full hover:bg-gray-600'>Politics</button></div>
                 <div><button className='py-1 flex justify-start pl-6 w-full hover:bg-gray-600'>Sports</button></div>
                 <div><button className='py-1 flex justify-start pl-6 w-full hover:bg-gray-600'>Health</button></div>
-                <div><button className='py-1 flex justify-start pl-6 w-full hover:bg-gray-600'>India</button></div>
+                {/* <div><button className='py-1 flex justify-start pl-6 w-full hover:bg-gray-600'>India</button></div> */}
             </div>
         </div>
   )
