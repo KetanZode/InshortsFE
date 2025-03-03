@@ -1,6 +1,8 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:8000"; // Replace with your backend API
+const env_local = true
+if (env_local==true) {const API_URL = "http://localhost:8000";} // Replace with your backend API
+else  {const API_URL = "http://http://13.60.253.32:8000";} 
 
 export const fetchData = async (endpoint) => {
     // const response = await axios.get(`${API_URL}/${endpoint}`);
