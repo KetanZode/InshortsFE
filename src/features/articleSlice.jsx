@@ -28,28 +28,42 @@ export const deleteArticles = createAsyncThunk("info/deletearticle", async (id) 
 
 const articleSlice = createSlice({
   name: "articles",
-  initialState: { articles: [], status: "idle" },
-  reducers: {},
+  initialState: { articles: [], status: "idle", error:'none', loading: 0 },
+  reducers: {
+    setLoading:(state)=>state.loading=0
+  },
   extraReducers: (builder) => {
     builder
       .addCase(fetchArticles.fulfilled, (state, action) => {
         console.log(action.payload, state.articles)
         state.articles = action.payload
+        state.loading = 100
         // state.articles = [...state.articles, ...action.payload];
       })
       .addCase(fetchArticles.rejected, (state, action) => {
         console.log('the function is rejected')
         window.alert('No more items to scroll for this category')
+        state.loading = 100
+        // state.articles = [...state.articles, ...action.payload];
+      })
+      .addCase(fetchArticles.pending, (state, action) => {
+        state.loading=20
         // state.articles = [...state.articles, ...action.payload];
       })
       .addCase(loadmoreArticles.fulfilled, (state, action) => {
         console.log(action.payload, state.articles)
+        state.loading = 100
         // state.articles = action.payload
         state.articles = [...state.articles, ...action.payload];
+      })
+      .addCase(loadmoreArticles.pending, (state, action) => {
+        state.loading=20
+        // state.articles = [...state.articles, ...action.payload];
       })
       .addCase(loadmoreArticles.rejected, (state, action) => {
         console.log('the function is rejected')
         window.alert('No more items to scroll for this category')
+        state.loading = 100
         
       })
       .addCase(createArticles.fulfilled, (state, action) => {
@@ -64,5 +78,7 @@ const articleSlice = createSlice({
       });
   },
 });
+
+export const {setLoading} = articleSlice.actions 
 
 export default articleSlice.reducer;
