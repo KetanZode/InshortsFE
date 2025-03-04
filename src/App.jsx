@@ -5,7 +5,7 @@ import {
   Link,
   Outlet
 } from "react-router-dom";
-import InfoComp from "/src/app/infonow/infoComp"
+import InfoComp from "/src/app/infonow/InfoComp"
 import NotFound from "/src/components/NotFound";
 
 export default function App() {
