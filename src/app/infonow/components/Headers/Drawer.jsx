@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { updatelang } from '/src/features/todo/language'
+import { updatelang } from '/src/app/infonow/features/todo/language'
 import { resetpage } from '../../features/paramslice'
 
 function Drawer() {

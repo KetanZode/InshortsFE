@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import { fetchData, createData, updateData, deleteData } from "../api/api";
+import { fetchData, createData, updateData, deleteData } from "/src/api/api";
 import { useDispatch } from "react-redux";
 
 
@@ -30,7 +30,7 @@ const articleSlice = createSlice({
   name: "articles",
   initialState: { articles: [], status: "idle", error:'none', loading: 0 },
   reducers: {
-    setLoading:(state)=>state.loading=0
+    setLoading:(state)=>{state.loading=0}
   },
   extraReducers: (builder) => {
     builder

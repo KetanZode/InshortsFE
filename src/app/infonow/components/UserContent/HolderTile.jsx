@@ -4,10 +4,10 @@ function HolderTile({data}) {
     return (
         <div>
             <div>
-                    <div  className='lg:flex justify-between lg:my-8 lg:mx-72 shadow-lg   shadow-gray-400 rounded-sm min-h-72'>
+                    <div  className='lg:flex justify-between lg:my-8 lg:mx-72 shadow-md shadow-blue-200 m-10  shadow-gray-400 min-h-72 rounded-lg'>
                         
                         <div className='lg:h-60 lg:w-2/5 pt-5 pl-2'>
-                        <img className='h-auto' src={data.image_b64} alt=""/>
+                        <img className='w-full h-full rounded shadow' src={data.image_b64} alt=""/>
                         </div>
 
                         

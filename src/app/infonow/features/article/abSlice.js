@@ -1,6 +1,6 @@
 // src/mySlice.js
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import { apicall } from '../../api/AxiosServicesSlice';
+import { apicall } from '/src/api/AxiosServicesSlice';
 
 
 // Define the async action using createAsyncThunk

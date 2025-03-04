@@ -1,13 +1,3 @@
-import Floater from "./components/UserContent/Floater"
-import Footer from "./components/Footers/Footer"
-import HolderTile from "./components/UserContent/HolderTile"
-import LoadMore from "./components/UserContent/LoadMore"
-import Navbar from "./components/Headers/Navbar"
-import UserContentWarpper from "./components/UserContent/UserContentWarpper"
-import AdminContentWrapper from "./components/AdminContent/AdminContentWrapper"
-import {useSelector, useDispatch} from "react-redux"
-import { remsg } from "./features/errorSlice"
-import LoadingBar from "react-top-loading-bar";
 import {
   BrowserRouter as Router,
   Routes,
@@ -15,43 +5,18 @@ import {
   Link,
   Outlet
 } from "react-router-dom";
-import { increment, decrement } from "./features/paramslice"
-import { setLoading } from "./features/articleSlice"
-
-
+import InfoComp from "/src/app/infonow/infoComp"
+import NotFound from "/src/components/NotFound";
 
 export default function App() {
-  const panel = useSelector((state)=>state.panel.panel) 
-  const param = useSelector((state) => state.param)
-  const errormsg = useSelector((state) => state.errormsg)
-  const error  = useSelector((state) => state.articles.error);
-  const loading  = useSelector((state) => state.articles.loading);
-  console.log(loading)
-  const dispatch = useDispatch()
   return (
     <Router>
-    <>
-    <div>
-      {/* Header */}
-        <Navbar/>
-        <LoadingBar
-        color="#FF0000"
-        progress={loading}
-        onLoaderFinished={() => dispatch(setLoading())}
-      />
-            {/* Header */}
-      {/* {panel==='user' && <UserContentWarpper/>}
-      {panel==='admin' && <AdminContentWrapper/>}
-         */}
-      <Routes>
-        <Route path="/admin" element={<AdminContentWrapper />} />
-        <Route path="/" element={<UserContentWarpper />} />
-      </Routes>
-      {/* Footer */}
-      <Footer/>
-      {/* Footer  */}
-      </div>
-    </>
-    </Router>
+   <>
+   <Routes>
+        <Route  path="/infonow/*" element={ <InfoComp/>} />
+        <Route  path="*" element={ <NotFound/>} />
+    </Routes>
+   </>
+   </Router>
   )
 }

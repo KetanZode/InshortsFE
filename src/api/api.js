@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const env_local =  false
+const env_local =  true
 let API_URL = ""
 if (env_local==true) {API_URL = "http://localhost:8000";} // Replace with your backend API
 else  {API_URL = "http://13.60.253.32:8000";} 

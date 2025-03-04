@@ -1,13 +1,13 @@
 import { configureStore } from "@reduxjs/toolkit";
 
-import todoReducer from  '../features/todo/TodoSlice'
-import languageReducer from '../features/todo/language'
-import PanelReducer from '../features/panel/switchPanelSlice'
+import todoReducer from  '/src/app/infonow/features/todo/TodoSlice'
+import languageReducer from '/src/app/infonow/features/todo/language'
+import PanelReducer from '/src/app/infonow/features/panel/switchPanelSlice'
 // import ArticleReducer from '../features/article/NewArtSlice'
-import ArticleReducer from '../features/articleSlice'
-import apicallReducer from '../features/article/abSlice'
-import paramReducer from '../features/paramslice/'
-import errorReducer from '../features/errorSlice/'
+import ArticleReducer from '/src/app/infonow/features/articleSlice'
+import apicallReducer from '/src/app/infonow/features/article/abSlice'
+import paramReducer from '/src/app/infonow/features/paramslice/'
+import errorReducer from '/src/app/infonow/features/errorSlice/'
 
 
 export const store = configureStore({

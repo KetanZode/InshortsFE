@@ -1,13 +1,16 @@
 import React from 'react'
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 function Footer() {
   return (
-    <div className='lg:min-h-24 bg-gray-700'>
+    <div className='lg:min-h-24 bg-slate-700'>
       <div className='flex md:justify-between lg:px-64 lg:py-5'>
             <div className='text-white '>
                 <div className='flex'>
                 <div className='flex flex-col justify-items-end text-right'>
-                    <img src="../assets/logo_footer.png" alt="" width={"200"} className='mb-10 px-[-100]'/>
+                    {/* <img src="../assets/logo_footer.png" alt="" width={"200"} className='mb-10 px-[-100]'/> */}
+                    <DotLottieReact  src="/public/assets/gifs/infoNow.lottie" autoplay className="h-20"/> 
+                    <p className='flex justify-center'>iNFONOW</p>
 
                     <p className='text-sm font-thin font-mono text-pretty'><b className='font-extrabold'>Inshorts</b> Pte, Ltd.</p>
                     <p className='text-sm'><b>&copy;</b>  COPYRIGHT 2024</p>
