@@ -8,7 +8,7 @@ function Floater() {
             <div className="lg:flex">
                 <p className='text-sm lg:flex flex-row text-pretty font-mono font-medium'>For the best experience use <b> inshots </b> app on your smartphone</p>
             </div>
-            <div className='lg:flex place-self-end m-3'>
+            <div className='lg:flex place-self-end mb-3'>
                 <img  className='mx-2 hover:scale-105 transition ease-in-out' src="/public/assets/appstore.png" alt="" width={"120"} />
                 <img  className='mx-2 hover:scale-105 transition ease-in-out' src="/public/assets/playstore.png" alt="" width={"120"} />
             </div>

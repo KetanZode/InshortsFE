@@ -8,7 +8,7 @@ function NotFound() {
             <img className='h-1/4 w-1/3' src="/public/assets/gifs/404-  cactus.gif" alt="" />
         </div> */}
         <DotLottieReact 
-            src="/public/assets/gifs/robo404.lottie"
+            src="/assets/gifs/robo404.lottie"
             loop
             autoplay
             className=''

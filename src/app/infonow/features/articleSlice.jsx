@@ -28,7 +28,7 @@ export const deleteArticles = createAsyncThunk("info/deletearticle", async (id) 
 
 const articleSlice = createSlice({
   name: "articles",
-  initialState: { articles: [], status: "idle", error:'none', loading: 0 },
+  initialState: { articles: [], status: "idle", error:'none', loading: 0, count: 0 },
   reducers: {
     setLoading:(state)=>{state.loading=0}
   },
@@ -36,7 +36,8 @@ const articleSlice = createSlice({
     builder
       .addCase(fetchArticles.fulfilled, (state, action) => {
         console.log(action.payload, state.articles)
-        state.articles = action.payload
+        state.articles = action.payload.data
+        state.count = action.payload.count
         state.loading = 100
         // state.articles = [...state.articles, ...action.payload];
       })
@@ -47,6 +48,7 @@ const articleSlice = createSlice({
         // state.articles = [...state.articles, ...action.payload];
       })
       .addCase(fetchArticles.pending, (state, action) => {
+        state.articles = []
         state.loading=20
         // state.articles = [...state.articles, ...action.payload];
       })
@@ -54,7 +56,8 @@ const articleSlice = createSlice({
         console.log(action.payload, state.articles)
         state.loading = 100
         // state.articles = action.payload
-        state.articles = [...state.articles, ...action.payload];
+        state.articles = [...state.articles, ...action.payload.data];
+        state.count = action.payload.count
       })
       .addCase(loadmoreArticles.pending, (state, action) => {
         state.loading=20
@@ -67,7 +70,7 @@ const articleSlice = createSlice({
         
       })
       .addCase(createArticles.fulfilled, (state, action) => {
-        state.articles.push(action.payload);
+        state.articles.push(action.payload.data);
       })
       .addCase(updateArticles.fulfilled, (state, action) => {
         const index = state.articles.findIndex((u) => u.id === action.payload.id);

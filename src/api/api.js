@@ -8,7 +8,7 @@ else  {API_URL = "http://13.53.91.249:8000";}
 export const fetchData = async (endpoint) => {
     // const response = await axios.get(`${API_URL}/${endpoint}`);
     const response = await axios.get(`${API_URL}/${endpoint}`);
-    return response.data.data;
+    return response.data;
 };
 
 export const createData = async (endpoint, data) => {

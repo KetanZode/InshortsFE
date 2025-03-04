@@ -15,7 +15,7 @@ function Navbar() {
                 <Hamburger/>
                 <div className='flex flex-col absolute md:mx-[43%] mx-[35%] md:-my-7'>
                     {/* <img src="/public/assets/gifs/infoNow.lottie" className='h-9 w-26' alt="" /> */}
-                     <DotLottieReact  src="/public/assets/gifs/infoNow.lottie" autoplay/>
+                     <DotLottieReact  src="assets/gifs/infoNow.lottie" autoplay/>
                     {/* {panel==='admin' && <p className='px-4 text-gray-500 font-bold'>Admin Panel</p>} */}
                 </div>
                 {/* <div className='flex'>
