@@ -9,7 +9,7 @@ function Footer() {
                 <div className='flex'>
                 <div className='flex flex-col justify-items-end text-right'>
                     {/* <img src="../assets/logo_footer.png" alt="" width={"200"} className='mb-10 px-[-100]'/> */}
-                    <DotLottieReact  src="/public/assets/gifs/infoNow.lottie" autoplay className="h-20"/> 
+                    <DotLottieReact  src="/assets/gifs/InfoNow.lottie" autoplay className="h-20"/> 
                     <p className='flex justify-center'>iNFONOW</p>
 
                     <p className='text-sm font-thin font-mono text-pretty'><b className='font-extrabold'>Inshorts</b> Pte, Ltd.</p>
