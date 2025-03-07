@@ -3,7 +3,7 @@ import axios from "axios";
 const env_local =  false
 let API_URL = ""
 if (env_local==true) {API_URL = "http://localhost:8000";} // Replace with your backend API
-else  {API_URL = "https://16.170.4.150:8000";} 
+else  {API_URL = "https://api.portfolioz.xyz/infonow";} 
 
 export const fetchData = async (endpoint) => {
     // const response = await axios.get(`${API_URL}/${endpoint}`);
