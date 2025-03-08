@@ -7,6 +7,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { createArticles, fetchArticles, updateArticles, deleteArticles, loadmoreArticles } from "../../features/articleSlice";
 import { uppage } from '../../features/paramslice';
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+import MoveUp from './MoveUp';
 
 
 
@@ -32,6 +33,7 @@ function UserContentWarpper() {
   return (
         <div className='bg-theme'>
             <Floater/>
+            <MoveUp/>
       <InfiniteScroll
               dataLength={articles.length} //This is important field to render the next data
               next={handlepage}

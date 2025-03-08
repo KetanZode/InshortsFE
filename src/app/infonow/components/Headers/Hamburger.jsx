@@ -21,7 +21,7 @@ function Hamburger() {
                     </div>
                     <div className='cursor-pointer lg:flex' onClick={handleSidebar}>
                         <img className='w-5 h-5 my-8 mx-2'  src="../assets/close-w.png" alt="" />
-                        <p className={`text-slate-600 transition ease-in-out hover:text-slate-500 p-7 px-1 sm:hidden`} >Close</p>
+                        <p className={`text-slate-600 transition ease-in-out hover:text-slate-500 p-7 px-1 sm:hidden`} ></p>
                     </div>
                 </div> 
             </div>
