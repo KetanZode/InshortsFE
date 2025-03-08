@@ -30,8 +30,7 @@ function UserContentWarpper() {
   const val = `lang=${lang}&page=${page}`
 
   return (
-        <>
-      
+        <div className='bg-theme'>
             <Floater/>
       <InfiniteScroll
               dataLength={articles.length} //This is important field to render the next data
@@ -59,7 +58,7 @@ function UserContentWarpper() {
             <button onClick={handlepage} className='border px-10 py-1 mb-10 shadow-lg shadow-gray-300 rounded-md hover:scale-105 font-bold font-thin font-extralight text-gray-800'>Load More</button>
           </div>
         </div>         */}
-    </>
+    </div>
   )
 }
 

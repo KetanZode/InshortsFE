@@ -1,13 +1,26 @@
 import React from 'react'
 import Navbar from './components/Header/Navbar'
+import ToggleTheme from '../../components/ToggleTheme'
 
 function DashComp() {
   return (
-    <div>
-        
-        <Navbar/>
+    <div className=''>
+      <Navbar/>
 
+      {/* Corrected theme-based styling */}
+      <div className="bg-[var(--bg_t)] text-[var(--text_t)] p-4 rounded-md">
+        Dashboard
+      </div>
 
+      <ToggleTheme/>
+
+      <div className="bg-theme text-theme p-4 rounded-md" 
+      // style={{ backgroundColor: "var(--bg_t)" }}
+      >
+        Themed Element
+      </div>
+
+      Element
     </div>
   )
 }

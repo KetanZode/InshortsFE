@@ -14,6 +14,7 @@ export default function App() {
     <Router>
    <>
    <Routes>
+        <Route  path="/" element={ <InfoComp/> } />
         <Route  path="/infonow/*" element={ <InfoComp/> } />
         <Route  path="/dashbaord/*" element={ <DashComp/> } />
         <Route  path="*" element={ <NotFound/>} />

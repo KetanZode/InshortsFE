@@ -7,8 +7,14 @@ export default {
   theme: {
     extend: {
       colors:{
-        // grape: "rbga(var{--grape})",
-        grape: "var{--grape}",
+        darkTheme: {
+          bg_t    : "#0d0c24",
+          text_t  : "#f5f5f7"
+        },
+        lightTheme: {
+          bg_t    : "#f5f5f7",
+          text_t  : "#070708" 
+        }
       }
     },
   },
