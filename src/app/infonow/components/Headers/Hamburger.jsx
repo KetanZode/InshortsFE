@@ -3,7 +3,6 @@ import Drawer from './Drawer'
 function Hamburger() {
     const [sidebar, setSidebar] = useState(true)
     const handleSidebar =()=>{
-        console.log('clicerd', !sidebar)
         setSidebar(!sidebar)
     }
     return (

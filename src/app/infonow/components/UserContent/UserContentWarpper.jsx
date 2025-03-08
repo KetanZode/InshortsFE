@@ -28,7 +28,6 @@ function UserContentWarpper() {
     };
   
   const val = `lang=${lang}&page=${page}`
-  console.log(count,'****************', articles)
 
   return (
         <>

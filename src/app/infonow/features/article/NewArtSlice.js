@@ -13,9 +13,7 @@ export const ArtSlice = createSlice({
     initialState,
     reducers: {
         refresh : (state, action)=>{
-            console.log("Refresh called")
             const res = apicall('fetcharticle')
-            console.log("called_res",res)
             state.articles = res
         }
     }

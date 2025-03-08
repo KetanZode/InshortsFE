@@ -11,7 +11,6 @@ export const ArticleSlice = createSlice({
     reducers:{
         updatepanel: (state,action) =>{
             state.panel = action.payload
-            console.log(state.panel)
         },
         createapi: (state, action) =>{
 

@@ -35,14 +35,12 @@ const articleSlice = createSlice({
   extraReducers: (builder) => {
     builder
       .addCase(fetchArticles.fulfilled, (state, action) => {
-        console.log(action.payload, state.articles)
         state.articles = action.payload.data
         state.count = action.payload.count
         state.loading = 100
         // state.articles = [...state.articles, ...action.payload];
       })
       .addCase(fetchArticles.rejected, (state, action) => {
-        console.log('the function is rejected')
         window.alert('No more items to scroll for this category')
         state.loading = 100
         // state.articles = [...state.articles, ...action.payload];
@@ -53,7 +51,6 @@ const articleSlice = createSlice({
         // state.articles = [...state.articles, ...action.payload];
       })
       .addCase(loadmoreArticles.fulfilled, (state, action) => {
-        console.log(action.payload, state.articles)
         state.loading = 100
         // state.articles = action.payload
         state.articles = [...state.articles, ...action.payload.data];
@@ -64,7 +61,6 @@ const articleSlice = createSlice({
         // state.articles = [...state.articles, ...action.payload];
       })
       .addCase(loadmoreArticles.rejected, (state, action) => {
-        console.log('the function is rejected')
         window.alert('No more items to scroll for this category')
         state.loading = 100
         

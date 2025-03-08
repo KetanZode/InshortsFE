@@ -13,11 +13,9 @@ const paramSlice = createSlice({
     reducers:{
         increment:(state)=> {
             state.count = state.count+1
-            console.log(state.count)
         },
         decrement:(state)=> {
             state.count = state.count-1
-            console.log(state.count)
         },
         uppage:(state)=>{
             state.page = state.page+1

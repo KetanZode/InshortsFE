@@ -9,10 +9,7 @@ const urls = {
 export const apicall = async (entity="", data={}) =>{
     try{
     if (entity in urls){
-        console.log('link',urls[entity])
-        console.log('payload',data)
         const res = await axios.post(urls[entity], data)
-        console.log("response",res.data)
         return res.data
     }
     else{
@@ -23,6 +20,5 @@ export const apicall = async (entity="", data={}) =>{
 
 export const fetcharticledata = async () =>{
     const res = await apicall('fetcharticle')
-    console.log("called_res",res)
     setRowData(res)
   }

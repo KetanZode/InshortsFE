@@ -30,7 +30,6 @@ export const AGGridComp = () => {
 
     const fetchdata = async () =>{
         const res = await apicall('fetcharticle')
-        console.log("called_res",res)
         setRowData(res)
       }
 
@@ -40,8 +39,6 @@ export const AGGridComp = () => {
     
     const print = () =>{
       const { data, loading, error } = useSelector((state) => state.myData);
-      console.log(data)
-      // console.log(dispatch())
     }
 
     return (

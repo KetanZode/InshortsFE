@@ -10,7 +10,6 @@ export const PanelSlice = createSlice({
     reducers:{
         updatepanel: (state,action) =>{
             state.panel = action.payload
-            console.log(state.panel)
         }
     }
 })

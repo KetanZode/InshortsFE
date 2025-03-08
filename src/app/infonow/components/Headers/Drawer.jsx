@@ -8,7 +8,6 @@ function Drawer() {
     const dispatch = useDispatch()
     const handleLang = (event) =>{
         setLang(l=>  event.target.textContent)
-        console.log(lang)
     }
     
     const relan = useSelector((state) => state.lang.language)

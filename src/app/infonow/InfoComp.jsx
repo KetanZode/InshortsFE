@@ -26,18 +26,17 @@ function InfoComp() {
     const errormsg = useSelector((state) => state.errormsg)
     const error  = useSelector((state) => state.articles.error);
     const loading  = useSelector((state) => state.articles.loading);
-    console.log(loading)
     const dispatch = useDispatch()
 
   return (
     <>
     <div>
     <Navbar/>
-        <LoadingBar
+        {/* <LoadingBar
         color="#366ff4"
         progress={loading}
         onLoaderFinished={() => dispatch(setLoading())}
-      />
+      /> */}
             {/* Header */}
       {/* {panel==='user' && <UserContentWarpper/>}
       {panel==='admin' && <AdminContentWrapper/>}
