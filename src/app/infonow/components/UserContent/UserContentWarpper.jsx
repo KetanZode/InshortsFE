@@ -39,7 +39,7 @@ function UserContentWarpper() {
               next={handlepage}
               hasMore={true}
               // loader={        <DotLottieReact src="/assets/gifs/loader.lottie"/>}
-              loader={      <div className='flex justify-center'><img className="h-28" src="/assets/gifs/spinner.gif"/></div>  }
+              loader={      <div className='flex justify-center'><img className="h-20" src="/assets/gifs/spinner.gif"/></div>  }
               // loader={      <div className='flex justify-center'><DotLottieReact  src="/assets/gifs/InfoNow.lottie" autoplay className="h-20"/> Loading...</div>  }
               endMessage={
                 <p style={{ textAlign: 'center' }}>

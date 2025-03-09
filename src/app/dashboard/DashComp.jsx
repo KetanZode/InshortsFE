@@ -7,12 +7,7 @@ function DashComp() {
     <div className=''>
       <Navbar/>
 
-      {/* Corrected theme-based styling */}
-      <div className="bg-[var(--bg_t)] text-[var(--text_t)] p-4 rounded-md">
-        Dashboard
-      </div>
-
-      <ToggleTheme/>
+     <ToggleTheme/>
 
       <div className="bg-theme text-theme p-4 rounded-md" 
       // style={{ backgroundColor: "var(--bg_t)" }}

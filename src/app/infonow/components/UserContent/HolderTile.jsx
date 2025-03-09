@@ -4,7 +4,8 @@ function HolderTile({data}) {
     return (
         <div>
             <div>
-                    <div  className='card-theme lg:flex justify-between lg:my-8 lg:mx-72 shadow-md shadow-blue-200 m-10  shadow-gray-400 min-h-72 rounded-lg '>
+                    {/* <div  className='card-theme lg:flex justify-between lg:my-8 lg:mx-72 shadow-md shadow-blue-200 m-10  shadow-gray-400 min-h-72 rounded-lg animate-in fade-out-40 fade-in-95'> */}
+                    <div  className='card-theme lg:flex justify-between lg:my-8 lg:mx-72 shadow-md shadow-blue-200 m-10  shadow-gray-400 min-h-72 rounded-lg animate-in zoom-in duration-500'>
                         
                         <div className='lg:h-60 lg:w-2/5 pt-5 p-2 my-3'>
                         <img className='w-full h-full rounded shadow' src={data?.image_b64} alt=""/>
