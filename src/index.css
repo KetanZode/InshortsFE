@@ -7,18 +7,21 @@
         --bg_t          : #0d0c24;
         --text_t        : #eeeef0;
         --navbar_t      : #0d0c24;
+        --info_card     : #14294a;
 }
 
 [data-theme="lightTheme"] {
         --navbar_t      : #366ff4;
         --bg_t          : #f5f5f7;
         --text_t        : #161e2b;
+        --info_card     : #b7ccec;
 }
 
 [data-theme="grayTheme"] {
         --navbar_t      : #0d0c24;
         --bg_t          : #1a1b2e;
         --text_t        : #f5f5f7;
+        --info_card     : #8cabdb;
       }
 
 .bg-theme {
@@ -31,4 +34,8 @@ color: var(--text_t);
 
 .nav-theme {
         background-color: var(--navbar_t);
+}
+
+.card-theme{
+        background-color: var(--info_card);
 }
