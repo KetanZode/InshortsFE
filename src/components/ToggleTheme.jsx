@@ -16,7 +16,7 @@ function ToggleTheme() {
       <select
         value={theme}
         onChange={(e) => setTheme(e.target.value)}
-        className="p-2 rounded-3xl border border-gray-300 bg-theme bg-blue-600 text-theme"
+        className="p-2 rounded-3xl border border-gray-300 nav-theme bg-blue-600 text-theme"
       >
         {themes.map((t) => (
           <option key={t} value={t} className="rounded-3xl">
