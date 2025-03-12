@@ -8,6 +8,7 @@ import ArticleReducer from '/src/app/infonow/features/articleSlice'
 import apicallReducer from '/src/app/infonow/features/article/abSlice'
 import paramReducer from '/src/app/infonow/features/paramslice/'
 import errorReducer from '/src/app/infonow/features/errorSlice/'
+import modelReducer from '../app/modelsdiagram/modelSlice'
 
 
 export const store = configureStore({
@@ -19,5 +20,6 @@ export const store = configureStore({
         call    : apicallReducer,
         param   : paramReducer,
         errormsg   : errorReducer,
+        models  : modelReducer
     }
 })

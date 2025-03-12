@@ -1,21 +1,16 @@
 import React from 'react'
 import Navbar from './components/Header/Navbar'
 import ToggleTheme from '../../components/ToggleTheme'
+import ScaleScroll from './components/Body/ScaleScroll'
+import SmoothScaleOnScroll from './components/Body/SmoothScaleOnScroll'
 
 function DashComp() {
   return (
-    <div className=''>
+    <div className='bg-theme'>
       <Navbar/>
+      <SmoothScaleOnScroll/>
+      <ScaleScroll/>
 
-     <ToggleTheme/>
-
-      <div className="bg-theme text-theme p-4 rounded-md" 
-      // style={{ backgroundColor: "var(--bg_t)" }}
-      >
-        Themed Element
-      </div>
-
-      Element
     </div>
   )
 }

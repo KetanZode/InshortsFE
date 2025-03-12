@@ -8,6 +8,7 @@ import {
 import InfoComp from "/src/app/infonow/InfoComp"
 import NotFound from "/src/components/NotFound";
 import DashComp from "./app/dashboard/DashComp";
+import Diagram from "./app/modelsdiagram/components/Diagram";
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
         <Route  path="/" element={ <InfoComp/> } />
         <Route  path="/infonow/*" element={ <InfoComp/> } />
         <Route  path="/dashboard/" element={ <DashComp/> } />
+        <Route  path="/diagram/" element={ <Diagram/> } />
         <Route  path="*" element={ <NotFound/>} />
     </Routes>
    </>
